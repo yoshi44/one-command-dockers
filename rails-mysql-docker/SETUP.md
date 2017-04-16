@@ -44,15 +44,13 @@ Overwrite /${HOME}/.../${RAILS_PROJECT_NAME}/.gitignore? (enter "h" for help) [Y
 
 ### 5. Start application
 
-```
-cp database.yml config
-```
+
 
 ```
 docker run -d -p 3000:3000 -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} developer_name/${PWD##*/} && docker ps && open http://localhost:3000
 ```
 
-### 6.
+### 6. Re-build for docker-compose
 
   - update `docker-compose` to `1.12.0`
 
@@ -60,6 +58,10 @@ docker run -d -p 3000:3000 -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} developer_name/$
 curl -L https://github.com/docker/compose/releases/download/1.12.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
+
+`
+cp database.yml config
+`
 
 ```
 docker-compose build --build-arg RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} app
