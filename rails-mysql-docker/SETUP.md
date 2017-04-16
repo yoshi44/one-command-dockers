@@ -84,7 +84,8 @@ Delete migrate file # :TODO
 `
 
 ```
-RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails destroy model task && rails generate model Appricant user_name:string```
+RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails destroy model task && rails generate model Appricant user_name:string
+```
 
 ### migrate
 ```
