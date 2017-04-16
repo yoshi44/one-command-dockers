@@ -77,3 +77,16 @@ docker-compose down && docker-compose up && docker-compose ps
 RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rake db:create
 ```
 
+### 9. create model
+
+```
+RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails generate model Appricant user_id:bigint
+```
+
+### migrate
+```
+RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rake db:migrate
+```
+
+  
+  
