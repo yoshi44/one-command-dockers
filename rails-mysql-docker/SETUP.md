@@ -44,10 +44,8 @@ Overwrite /${HOME}/.../${RAILS_PROJECT_NAME}/.gitignore? (enter "h" for help) [Y
 
 ### 5. Start application
 
-
-
 ```
-docker run -d -p 3000:3000 -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} developer_name/${PWD##*/} && docker ps && open http://localhost:3000
+#docker run -d -p 3000:3000 -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} developer_name/${PWD##*/} && docker ps && open http://localhost:3000
 ```
 
 ### 6. Re-build for docker-compose
