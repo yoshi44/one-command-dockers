@@ -4,16 +4,17 @@
 
   - #### As your current directory
 
-`
+```
 export RAILS_MYSQL_DOCKER_PATH=$PWD
-`
+```
 
-OR
+  OR
 
-#### Your rails project path
-`
+  - #### Your rails project path
+
+```
 export RAILS_MYSQL_DOCKER_PATH=${YOUR_PATH}
-`
+```
 
 ### 2. Docker pull ruby
 
