@@ -22,6 +22,16 @@ export RAILS_MYSQL_DOCKER_PATH=${YOUR_PATH}
 docker pull ruby:2.4.0
 `
 
+### 3. Create Gem file
+
+```
+docker run --rm -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} -w ${RAILS_MYSQL_DOCKER_PATH} ruby:2.4.0 bundle init
+```
+
+```
+touch Gemfile.lock 
+```
+
 ### 3.Create Image
 
   * create image
