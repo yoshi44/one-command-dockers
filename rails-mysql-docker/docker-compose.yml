@@ -9,7 +9,7 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - .:${PWD}
+      - .:${RAILS_MYSQL_DOCKER_PATH}
     links:
       - mysql
   mysql:
