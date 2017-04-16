@@ -64,3 +64,10 @@ chmod +x /usr/local/bin/docker-compose
 ```
 docker-compose build --build-arg RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} app
 ```
+
+### 7.
+
+```
+RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rake db:create
+```
+
