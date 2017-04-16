@@ -67,13 +67,13 @@ cp database.yml config
 docker-compose build --build-arg RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} app
 ```
 
-### 7.
+### 7. Start docker-compse
 
 ```
-docker-compose up
+docker-compose up && docker-compose ps
 ```
 
-### 8.
+### 8. Create database
 
 ```
 RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rake db:create
