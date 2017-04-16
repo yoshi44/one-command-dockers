@@ -37,7 +37,7 @@ touch Gemfile.lock
   * create image
   
     ```
-    docker build -t developer_name/"${PWD##*/}" --build-arg RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} .
+    docker build -t developer_name/${PWD##*/} --build-arg RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} .
     ```
 
 ### 4. Create Rails
