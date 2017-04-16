@@ -50,9 +50,13 @@ docker run --rm -it -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} developer_name/${PWD##*
 Overwrite /${HOME}/.../${RAILS_PROJECT_NAME}/.gitignore? (enter "h" for help) [Ynaqdh] Y
     conflict  Gemfile
 ```
--> Enter `Y`
+-> Enter `N`
 
 ### 5.
+
+```
+cp database.yml config
+```
 
 ```
 docker run -d -p 3000:3000 -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} developer_name/${PWD##*/}
