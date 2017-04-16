@@ -1,7 +1,17 @@
 # Create Docker
 
+Set environment variables
+
+As your current directory 
 `
 export RAILS_MYSQL_DOCKER_PATH=$PWD
+`
+
+OR
+
+Your rails project path
+`
+export RAILS_MYSQL_DOCKER_PATH=${YOUR_PATH}
 `
 
 `
