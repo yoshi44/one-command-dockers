@@ -68,6 +68,12 @@ docker-compose build --build-arg RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PA
 ### 7.
 
 ```
+docker-compose up
+```
+
+### 8.
+
+```
 RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rake db:create
 ```
 
