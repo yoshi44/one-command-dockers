@@ -5,7 +5,7 @@
   - #### As your current directory
 
 ```
-export RAILS_MYSQL_DOCKER_PATH=$PWD
+export RAILS_MYSQL_DOCKER_PATH=$PWD $$ echo "Your rails project path is ${RAILS_MYSQL_DOCKER_PATH}"
 ```
 
   OR
