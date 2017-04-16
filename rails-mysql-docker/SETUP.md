@@ -80,7 +80,7 @@ RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app r
 ### 9. create model
 
 ```
-RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails generate model Appricant user_id:bigint
+RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails generate model Appricant user_name:string
 ```
 
 ### migrate
