@@ -79,13 +79,16 @@ RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app r
 
 ### 9. create model
 
+`
+Delete migrate file # :TODO
+`
+
 ```
-RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails generate model Appricant user_name:string
-```
+RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails destroy model task && rails generate model Appricant user_name:string```
 
 ### migrate
 ```
-RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rake db:migrate
+RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rake db:migrate:reset
 ```
 
   
