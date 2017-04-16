@@ -49,7 +49,7 @@ cp database.yml config
 ```
 
 ```
-docker run -d -p 3000:3000 -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} developer_name/${PWD##*/}
+docker run -d -p 3000:3000 -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} developer_name/${PWD##*/} && docker ps
 ```
 
 ### 6.
