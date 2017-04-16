@@ -77,15 +77,25 @@ docker-compose down && docker-compose up && docker-compose ps
 RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rake db:create
 ```
 
-### 9. create model
+### Scaffold
 
-`
-Delete migrate file # :TODO
-`
+  `
+  Delete migrate file # :TODO
+  `
+    
+  - Scaffold
+  
+    ```
+    RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails generate scaffold Appricant user_name:string
+    ```
+  
+  - create model
+  
 
-```
-RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails destroy model task && rails generate model Appricant user_name:string
-```
+
+    ```
+    RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails destroy model task && rails generate model Appricant user_name:string
+    ```
 
 ### migrate
 ```
