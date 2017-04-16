@@ -42,3 +42,8 @@ Overwrite /${HOME}/.../${RAILS_PROJECT_NAME}/.gitignore? (enter "h" for help) [Y
 ```
 -> Enter `Y`
 
+### 5.
+
+```
+docker run -d -p 3000:3000 -v "$PWD":${RAILS_MYSQL_DOCKER_PATH} developer_name/${PWD##*/}
+```
