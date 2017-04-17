@@ -89,12 +89,12 @@ RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app r
     RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails generate scaffold applicant user_name:string
     ```
   
-  - create model
+  - destroy and create model
   
 
 
     ```
-    RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails destroy model task && rails generate model applicant user_name:string
+    RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails destroy model applicant && rails generate model applicant user_name:string
     ```
 
 ### migrate
