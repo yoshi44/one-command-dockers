@@ -92,6 +92,10 @@ RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app r
     ```
     RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails generate scaffold applicant user_name:string
     ```
+    
+    ```
+    open http://0.0.0.0:3000/applicants
+    ```
   
   - destroy and create model
   
