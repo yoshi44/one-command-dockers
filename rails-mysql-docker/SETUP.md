@@ -71,6 +71,10 @@ docker-compose build --build-arg RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PA
 docker-compose down && docker-compose up && docker-compose ps
 ```
 
+```
+open http://0.0.0.0:3000
+```
+
 ### 8. Create database
 
 ```
