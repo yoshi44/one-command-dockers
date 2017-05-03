@@ -86,8 +86,14 @@ RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app r
   `
   Delete migrate file # :TODO
   `
-    
-  - Scaffold
+   
+  - Destroy Scaffold
+  
+    ```
+    RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails destroy scaffold applicant
+    ```
+  
+  - Generate Scaffold
   
     ```
     RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails generate scaffold applicant user_name:string
