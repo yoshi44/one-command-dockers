@@ -27,7 +27,7 @@ docker pull ruby:2.4.0
 ### 3.Create Image
 
 #  * create image
-  
+
 #    ```
     docker build -t developer_name/${PWD##*/} --build-arg RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} . && docker images
 #    ```
@@ -74,7 +74,7 @@ docker-compose down && docker-compose up
 #```
 
 #```
-open http://0.0.0.0:3000
+#open http://0.0.0.0:3000
 #```
 
 ### 8. Create database
@@ -88,25 +88,25 @@ open http://0.0.0.0:3000
 #  `
 #  Delete migrate file # :TODO
 #  `
-   
+
 #  - Destroy Scaffold
-  
+
 #    ```
 #    RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails destroy scaffold applicant
 #    ```
-  
+
 #  - Generate Scaffold
-  
+
 #    ```
 #    RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails generate scaffold applicant user_name:string
 #    ```
-    
+
 #    ```
 #    open http://0.0.0.0:3000/applicants
 #    ```
-  
+
 #  - destroy and create model
-  
+
 
 
 #    ```
@@ -123,5 +123,5 @@ open http://0.0.0.0:3000
 #RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rails db
 #```
 
-  
-  
+
+
