@@ -100,6 +100,10 @@ RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app r
     ```
     
     ```
+    RAILS_MYSQL_DOCKER_PATH=${RAILS_MYSQL_DOCKER_PATH} docker-compose run --rm app rake db:migrate:reset
+    ```
+    
+    ```
     open http://0.0.0.0:3000/applicants
     ```
   
